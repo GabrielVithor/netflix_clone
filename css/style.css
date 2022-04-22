@@ -1,0 +1,193 @@
+:root {
+    --red1: #cc0000;
+    --black1: #0a0a0a;
+    --white1: #aaaaaa;
+}
+
+/*Boot*/
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-justify {
+    text-align: justify;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: var(--black1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+/*HEADER*/
+header {
+    width: 100%;
+}
+
+header .container {
+    width: 100%;
+    color: #ffffff;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header .logo a {
+    color: var(--red1);
+    font-size: 36px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a {
+    color: var(--white1);
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transition: .3s ease all;
+}
+
+/*MAIN*/
+main {
+    width: 100%;
+    height: auto;
+}
+
+/*FILME PRICIPAL*/
+
+.filme-principal {
+    font-size: 16px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .9)), url("../img/big-bang-poster.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 80vh;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.filme-principal .container {
+    margin-top: 15%;
+    width: 70%;
+    margin-left: 5%;
+}
+
+.filme-principal .title {
+    font-size: 48px;
+    font-weight: normal;
+    font-family: Tahoma, sans-serif;
+}
+
+.filme-principal .description {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.filme-principal .btn {
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 15px 30px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.filme-principal .btn:hover {
+    color: var(--black1);
+    background-color: white;
+    transition: .5s ease all;
+}
+
+.filme-principal i {
+    margin-right: 15px;
+}
+
+/* CARROSEL-FILMES*/
+.carrossel-filmes {
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    filter:brightness(90%);
+}
+
+.box-filme:hover{
+    filter:contrast(150%) brightness(100%);
+}
+
+/* FOOTER */
+footer {
+    padding: 30px 0;
+    background-color: #080808;
+    color: var(--white1);
+    border-top:1px solid var(--red1) ;
+}
+
+footer a {
+    color: var(--white1);
+}
+
+footer a:hover {
+    color: white;
+    transition: .5s ease all;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:768px) {
+    header .container {
+        width: 100%;
+        color: #ffffff;
+        justify-content: space-between;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .filme-principal .container {
+        margin-top: 0%;
+
+    }
+
+    .btn {
+        margin-top: 15px;
+        width: 300px;
+    }
+
+}
