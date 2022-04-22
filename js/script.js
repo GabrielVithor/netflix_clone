@@ -11,14 +11,15 @@
     autoplayHoverPause:true,
     responsive:{
         0:{
-            items:1
+            items:2,
+            dots:false
         },
         600:{
-            items:3,
+            items:4,
             dots:false
         },
         1000:{
-            items:5
+            items:6
         }
     }
 })
